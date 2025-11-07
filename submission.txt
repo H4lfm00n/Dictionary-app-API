@@ -1,0 +1,2 @@
+GITHUB LINK: https://github.com/H4lfm00n/Dictionary-app-API
+VERCEL DEPLOYED LINK: https://dictionary-app-api.vercel.app/
