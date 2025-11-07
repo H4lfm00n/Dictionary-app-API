@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictionary Lookup</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="container">
+    <h1>Dictionary Lookup</h1>
+    <p class="tagline">Search any English word and get phonetics, parts of speech, and definitions.</p>
+  </header>
+
+  <main class="container">
+    <form id="lookupForm" class="card" autocomplete="off" role="search" aria-label="Dictionary search form">
+      <label class="sr-only" for="wordInput">Enter an English word</label>
+      <input id="wordInput" name="word" type="text" placeholder="e.g., serendipity" inputmode="latin-name" required aria-required="true" />
+      <button type="submit" id="searchBtn" aria-label="Search for definitions">Search</button>
+      <p id="help" class="help-text">Tip: Try words like <em>ephemeral</em>, <em>robust</em>, or <em>catalyst</em>.</p>
+    </form>
+
+    <section id="results" class="card" aria-live="polite" aria-atomic="true">
+      <div id="status" class="status"></div>
+      <div id="output"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Built with <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener">Free Dictionary API</a>.</p>
+      <p>
+        Source: <a href="https://github.com/yourusername/dictionary-lookup-app" target="_blank" rel="noopener">GitHub Repository</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
